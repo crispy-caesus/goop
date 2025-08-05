@@ -1,0 +1,10 @@
+: horai [<receiver>] <flags>|<message>
+<receiver>                            # (optional) key associated with the receiver, defaults to last receiver
+<message>                             # if no flags are provided, defaults to -m with this <message>
+<flags>                               # flags
+  -m --message <message>              # encrypt a message (can be ommited)
+  -f --file <path>                    # encrypt a file
+  -e --edit                           # open an empty file with your $EDITTOR
+  -ex --edit-ext [ext]                # same as above but makes a file with given file extension
+  -o --output <path/to/dir>           # directory to write encrypted secret into
+  -si --stdin                         # reads message from stdin
